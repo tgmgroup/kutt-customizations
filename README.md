@@ -13,14 +13,14 @@ This is a fork of the [Kutt Crimson](https://github.com/thedevs-network/kutt-cus
 
 
 # Table of Contents
-- [Custom - A Custom Theme for Kutt](#project-title)
+- [Custom - A Custom Theme for Kutt](#custom---a-custom-theme-for-kutt)
 - [Installation and Usage](#installation-and-usage)
 - [Contribute](#contribute)
 - [License](#license)
 
 
 # Installation and Usage
-[(Back to top)](#project-title)
+[(Back to top)](#custom---a-custom-theme-for-kutt)
 
 Place the content of a theme or customization inside your [`/custom`](https://github.com/tgmgroup/kutt-customizations/tree/main/custom) folder. This also customizes the footer to include custom links.
 
@@ -30,19 +30,19 @@ Place the content of a theme or customization inside your [`/custom`](https://gi
 
 
 # Contribute
-[(Back to top)](#project-title)
+[(Back to top)](#custom---a-custom-theme-for-kutt)
 
 Fork this project or the main [Kutt Crimson](https://github.com/thedevs-network/kutt-customizations/tree/main/themes/crimson) theme to contribute to the source code.
 Any donations are appreciated (please use the Github sponsor/funding buttons).
 
 
 # License
-[(Back to top)](#project-title)
+[(Back to top)](#custom---a-custom-theme-for-kutt)
 
 Distributed under the [MIT license](./LICENSE). See [MIT License](https://opensource.org/licenses/MIT) for more information.
 
 
 # Contact
-[(Back to top)](#project-title)
+[(Back to top)](#custom---a-custom-theme-for-kutt)
 
 Project Link: [https://github.com/tgmgroup/kutt-customizations](https://github.com/tgmgroup/kutt-customizations)
