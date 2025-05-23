@@ -1,38 +1,42 @@
 <footer>
-  
-  <p>
 
+  <div style="display: flex; align-items: center;">
     <input id="dark" type="checkbox" />
     <label id="theme-toggle" for="dark">
       <span>&#x2600; Light Mode</span><span>&#x1F319; Dark Mode</span>
-    </label><span>|</span>
-  </p>
+    </label>  &emsp14;<span>|</span> <br><br>
+  </div>
 
-  <p>
-    Powered by <a href="https://github.com/thedevs-network/kutt" title="The Devs" target="_blank" rel="noopener noreferrer">Kutt</a> <span>|</span> 
+  <div style="display: flex; align-items: center;">
+    <p>
+      Powered by <a href="https://github.com/thedevs-network/kutt" title="The Devs" target="_blank" rel="noopener noreferrer">Kutt</a> <span>|</span> 
 
-    <a href="/terms" title="Terms of Service">Terms of Service</a>
-    
-    {{#if contact_email}}
-      <span>|</span> 
-      <button class="link" hx-get="/get-support-email" hx-swap="outerHTML">
-        <span>{{> icons/spinner}}</span>
-        Contact us
-      </button>
-    {{/if}}
+      <a href="/terms" title="Terms of Service">Terms of Service</a> <span>|</span> 
+      
+      {{#if contact_email}}
+        <span>|</span> 
+        <button class="link" hx-get="/get-support-email" hx-swap="outerHTML">
+          <span>{{> icons/spinner}}</span>
+          Contact Us
+        </button> <span>|</span> 
+      {{/if}}
 
-  </p>
+    </p>
+    <br><br>
+  </div>
 
-  <p>
-    <div id="google_translate_element"></div>
+  <div style="display: flex; align-items: center;">
+    <p>&emsp14;
+      <div id="google_translate_element"></div>
 
-    <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-    }
-    </script>
+      <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+      }
+      </script>
 
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  </p>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </p>
+  </div>
   
 </footer>
