@@ -1,0 +1,135 @@
+/************************************************************************
+* Main CSS file for the custom theme
+************************************************************************/
+
+
+/************************************************************************
+* Light mode colors
+************************************************************************/
+:root {
+  --bg-color: hsl(348, 12%, 95%);
+  --text-color: hsl(348, 35%, 25%);
+  --color-primary: hsl(348, 83%, 47%);
+  --outline-color: hsl(331, 100%, 72%);
+  --button-bg: linear-gradient(to right, #e0e0e0, #bdbdbd);
+  --button-bg-box-shadow-color: rgba(160, 160, 160, 0.5);
+  --button-bg-primary: linear-gradient(to right, hsl(348, 89%, 63%), hsl(348, 83%, 47%));
+  --button-bg-primary-box-shadow-color: hsla(350, 90%, 61%, 0.5);
+  --button-bg-secondary: linear-gradient(to right, hsl(257, 50%, 49%), hsl(257, 69%, 38%));
+  --button-bg-secondary-box-shadow-color: hsla(250, 58%, 42%, 0.5);
+  --button-action-shadow-color: hsla(348, 15%, 60%, 0.12);
+  --underline-color: hsl(348, 35%, 65%);
+  --secondary-text-color: hsl(348, 14%, 60%);
+  --send-icon-hover-color: hsl(257, 69%, 38%);
+  --send-spinner-icon-color: hsl(257, 15%, 70%);
+  --copy-icon-color: hsl(43, 85%, 50%);
+  --copy-icon-bg-color: hsl(43, 100%, 91%);
+  --copy-icon-shadow-color: hsla(348, 15%, 60%, 0.12);
+  --focus-outline-color: hsla(356, 90%, 61%, 0.5);
+  --checkbox-bg-color: hsl(257, 57%, 57%);
+  --input-shadow-color: hsla(348, 15%, 70%, 0.2);
+  --input-hover-shadow-color: hsla(348, 15%, 70%, 0.4);
+  --input-label-color: hsl(348, 35%, 25%);
+  --table-shadow-color: hsla(348, 20%, 70%, 0.3);
+  --table-bg-color: hsl(348, 12%, 95%);
+  --table-tr-border-color: hsl(348, 14%, 94%);
+  --table-tr-hover-bg-color: hsl(348, 14%, 98%);
+  --table-head-tr-border-color: hsl(348, 14%, 90%);
+  --table-status-gray-bg-color: hsl(348, 12%, 95%);
+  --button-action-stats-bg-color: #f1ecff;
+  --button-action-stats-stroke-color: #7c5fc5;
+}
+
+/************************************************************************
+* Dark mode colors
+************************************************************************/
+:root:has(#dark:checked) {
+  /* Dark Theme Colors */
+  --bg-color: hsl(348, 10%, 15%); /* Darker background */
+  --text-color: hsl(348, 15%, 85%); /* Lighter text */
+  --color-primary: hsl(348, 70%, 55%); /* Slightly desaturated/brighter for contrast */
+  --outline-color: hsl(331, 80%, 45%); /* Darker, less vibrant */
+  --button-bg: linear-gradient(to right, #333333, #222222); /* Darker grey gradient */
+  --button-bg-box-shadow-color: rgba(0, 0, 0, 0.4); /* Darker, more subtle shadow */
+  --button-bg-primary: linear-gradient(to right, hsl(348, 80%, 40%), hsl(348, 75%, 30%)); /* Darker primary gradient */
+  --button-bg-primary-box-shadow-color: hsla(350, 70%, 30%, 0.5); /* Darker primary shadow */
+  --button-bg-secondary: linear-gradient(to right, hsl(257, 40%, 35%), hsl(257, 60%, 25%)); /* Darker secondary gradient */
+  --button-bg-secondary-box-shadow-color: hsla(250, 50%, 20%, 0.5); /* Darker secondary shadow */
+  --button-action-shadow-color: hsla(348, 15%, 5%, 0.2); /* Darker, more prominent shadow */
+  --underline-color: hsl(348, 20%, 40%); /* Darker underline */
+  --secondary-text-color: hsl(348, 10%, 50%); /* Darker secondary text */
+  --send-icon-hover-color: hsl(257, 60%, 50%); /* Slightly brighter for dark theme */
+  --send-spinner-icon-color: hsl(257, 10%, 40%); /* Darker spinner icon */
+  --copy-icon-color: hsl(43, 70%, 65%); /* Brighter copy icon */
+  --copy-icon-bg-color: hsl(43, 30%, 20%); /* Darker copy icon background */
+  --copy-icon-shadow-color: hsla(348, 15%, 5%, 0.2); /* Darker shadow */
+  --focus-outline-color: hsla(356, 80%, 50%, 0.5); /* Darker, still visible outline */
+  --checkbox-bg-color: hsl(257, 40%, 40%); /* Darker checkbox background */
+  --input-shadow-color: hsla(348, 15%, 10%, 0.3); /* Darker input shadow */
+  --input-hover-shadow-color: hsla(348, 15%, 10%, 0.5); /* Darker input hover shadow */
+  --input-label-color: hsl(348, 15%, 75%); /* Lighter input label */
+  --table-shadow-color: hsla(348, 10%, 10%, 0.4); /* Darker table shadow */
+  --table-bg-color: hsl(348, 10%, 18%); /* Darker table background */
+  --table-tr-border-color: hsl(348, 10%, 25%); /* Darker table row border */
+  --table-tr-hover-bg-color: hsl(348, 10%, 22%); /* Darker table row hover background */
+  --table-head-tr-border-color: hsl(348, 10%, 30%); /* Darker table head border */
+  --table-status-gray-bg-color: hsl(348, 10%, 18%); /* Darker status background */
+  --button-action-stats-bg-color: #2a223f; /* Darker version of the stats background */
+  --button-action-stats-stroke-color: #9b8ac7; /* Lighter version of the stats stroke */
+}
+
+a.button.action.stats,
+button.action.stats {
+  background: var(--button-action-stats-bg-color);
+}
+
+a.button.action.stats svg,
+button.action.stats svg {
+  stroke-width: 2.5;
+  stroke: var(--button-action-stats-stroke-color);
+}
+
+/************************************************************************
+* Dark mode toggle -- built using Tymoteusz Makowski (TymekDev)'s code 
+*                     https://github.com/TymekDev/no-js-dark-mode-toggle
+************************************************************************/
+/************************************************************************
+
+/* Making the toggle a bit nicer */
+#dark {
+  display: none;
+}
+
+/* Label switching support */
+body {
+  --display-light: none;
+  --display-dark: initial;
+}
+
+body:has(#dark:checked) {
+  --display-light: initial;
+  --display-dark: none;
+}
+
+#theme-toggle span:first-of-type {
+  display: var(--display-light);
+}
+
+#theme-toggle span:last-of-type {
+  display: var(--display-dark);
+}
+
+/* Support for system theme */
+@media (prefers-color-scheme: dark) {
+  body {
+
+    --display-light: initial;
+    --display-dark: none;
+  }
+
+  body:has(#dark:checked) {
+
+    --display-light: none;
+    --display-dark: initial;
+  }
+}
