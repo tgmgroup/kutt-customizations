@@ -21,7 +21,7 @@ This is a fork of the [Kutt Crimson](https://github.com/thedevs-network/kutt-cus
 # Installation and Usage
 [(Back to top)](#custom---a-custom-theme-for-kutt)
 
-Place the content of a theme or customization inside your [`/custom`](https://github.com/tgmgroup/kutt-customizations/tree/main/custom) folder. Customize the footer (themes/custom/views/footer.hbs) to add links or content.
+Place the content of a theme or customization inside your [`/custom`](https://github.com/tgmgroup/kutt-customizations/tree/main/custom) folder. Customize the footer [`/footer.hbs`](https://github.com/tgmgroup/kutt-customizations/tree/main/themes/custom/views/footer.hbs) to add links or content.
 
 | Homepage | Admin page | Login/signup |
 | -------- | ---------- | ------------ |
