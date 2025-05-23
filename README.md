@@ -1,7 +1,6 @@
 ![Kutt Custom Theme](https://github.com/tgmgroup/kutt-customizations/blob/main/themes/custom/images/card.png)
 
 # Custom - A Custom Theme for Kutt
-https://github.com/tgmgroup/kutt-customizations/tree/main
 
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/tgmgroup/kutt-customizations?include_prereleases)](https://img.shields.io/github/v/release/tgmgroup/kutt-customizations?include_prereleases)
 [![GitHub last commit](https://img.shields.io/github/last-commit/tgmgroup/kutt-customizations)](https://img.shields.io/github/last-commit/tgmgroup/kutt-customizations)
@@ -22,7 +21,7 @@ This is a fork of the [Kutt Crimson](https://github.com/thedevs-network/kutt-cus
 # Installation and Usage
 [(Back to top)](#custom---a-custom-theme-for-kutt)
 
-Place the content of a theme or customization inside your [`/custom`](https://github.com/tgmgroup/kutt-customizations/tree/main/custom) folder. This also customizes the footer to include custom links.
+Place the content of a theme or customization inside your [`/custom`](https://github.com/tgmgroup/kutt-customizations/tree/main/custom) folder. Customize the footer (themes/custom/views/footer.hbs) to add links or content.
 
 | Homepage | Admin page | Login/signup |
 | -------- | ---------- | ------------ |
