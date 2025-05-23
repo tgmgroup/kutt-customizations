@@ -89,6 +89,10 @@ button.action.stats svg {
   stroke: var(--button-action-stats-stroke-color);
 }
 
+table tr {
+  background-color: var(--table-bg-color)
+}
+
 /************************************************************************
 * Dark mode toggle -- built using Tymoteusz Makowski (TymekDev)'s code 
 *                     https://github.com/TymekDev/no-js-dark-mode-toggle
